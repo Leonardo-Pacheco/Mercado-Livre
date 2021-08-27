@@ -1,0 +1,42 @@
+{
+    "flex-layout.row#deals": {
+      "children": [
+        "flex-layout.col#deals1",
+        "flex-layout.col#deals2"
+      ],
+      "props": {
+        "horizontalAlign": "center",
+        "blockClass": "deals"
+      }
+    },
+  
+    "flex-layout.col#deals1": {
+      "children": [
+        "image#deal1",
+        "rich-text#deal1"
+      ]
+    },
+    "image#deal1": {
+      "props": {
+        "src": "https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/credit-card.svg",
+        "maxHeight": "48px"
+      }
+    },
+    "rich-text#deal1": {
+      "props": {
+        "text": "Até 12 vezes sem juros",
+        "blockClass": "deals"
+      }
+    },
+    "flex-layout.col#deals2":{
+      "children": [
+        "image#deal2"
+      ]
+    },
+    "image#deal2": {
+      "props": {
+        "src": "https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/view-more.svg",
+        "maxHeight": "48px"
+      }
+    }
+  }

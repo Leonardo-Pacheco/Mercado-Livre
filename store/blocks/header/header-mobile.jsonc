@@ -1,0 +1,85 @@
+{
+    "header-layout.mobile": {
+        "children": [
+            "sticky-layout#1-mobile"
+        ]
+    },
+    "sticky-layout#1-mobile": {
+        "children": [
+            "flex-layout.row#1-mobile",
+            "flex-layout.row#2-mobile"
+        ]
+    },
+    "flex-layout.row#1-mobile": {
+        "children": [
+            "logo#mobile",
+            "search-bar",
+            "drawer",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": "main-header-mobile1",
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "drawer": {
+        "children": [
+            "menu#drawer"
+        ]
+    },
+    "menu#drawer": {
+        "children": [],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "logo#mobile": {
+        "props": {
+            "title": "Logo",
+            "href": "/",
+            "url": "assets/images/logo.png",
+            "width": "70"
+        }
+    },
+
+    "flex-layout.row#2-mobile": {
+        "children": [
+            "image#mobile1",
+            "rich-text#mobile",
+            "image#mobile2"
+        ],
+        "props": {
+            "blockClass": "main-header-mobile2",
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+
+    "image#mobile1": {
+        "props": {
+            "title": "Navigation",
+            "href": "/",
+            "url": "assets/images/navigation.png"
+        }
+    },
+
+    "rich-text#mobile": {
+        "props": {
+            "textAlignment": "CENTER",
+            "text": "Informe seu CEP",
+            "blockClass": "rich-text--menu"
+        }
+    },
+
+    "image#mobile2": {
+        "props": {
+            "url": "assets/images/arrow.png",
+            "max-height": 38,
+            "max-width": 11
+
+        }
+    }
+}

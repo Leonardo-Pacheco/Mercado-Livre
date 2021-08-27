@@ -1,0 +1,50 @@
+{
+  "store.home": { 
+    "blocks": [
+      "list-context.image-list#main",
+      "flex-layout.row#deals"
+    ]
+  },
+
+  "list-context.image-list#main": {
+    "children": ["slider-layout#main-banner"],
+    "props": {
+      "height": 255,
+      "images": [
+        {
+          "image": "https://http2.mlstatic.com/D_NQ_777917-MLA47252049394_082021-OO.webp"
+        },
+        {
+          "image": "https://http2.mlstatic.com/D_NQ_886619-MLA47235696752_082021-OO.webp"
+        },
+        {
+          "image": "https://http2.mlstatic.com/D_NQ_876227-MLA47247451751_082021-OO.webp"
+        },
+        {
+          "image": "https://http2.mlstatic.com/D_NQ_833003-MLA47235944282_082021-OO.webp"
+        },
+        {
+          "image": "https://http2.mlstatic.com/D_NQ_648628-MLA47250706838_082021-OO.webp"
+        },
+        {
+          "image": "https://http2.mlstatic.com/D_NQ_808074-MLA47248076624_082021-OO.webp"
+        },
+        {
+          "image": "https://http2.mlstatic.com/D_NQ_672339-MLA47259900565_082021-OO.webp"
+        }
+      ]
+    }
+  },
+  "slider-layout#main-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  }
+}
