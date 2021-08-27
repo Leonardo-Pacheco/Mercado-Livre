@@ -14,3 +14,7 @@
 .searchBarContainer {
     max-width: 200px;
 }
+
+.imageElement {
+    margin-right: 5px;
+}
