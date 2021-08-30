@@ -1,8 +1,7 @@
 {
     "flex-layout.row#deals": {
       "children": [
-        "flex-layout.col#deals1",
-        "flex-layout.col#deals2"
+        "flex-layout.col#deals1"
       ],
       "props": {
         "horizontalAlign": "center",
@@ -26,17 +25,6 @@
       "props": {
         "text": "Até 12 vezes sem juros",
         "blockClass": "deals"
-      }
-    },
-    "flex-layout.col#deals2":{
-      "children": [
-        "image#deal2"
-      ]
-    },
-    "image#deal2": {
-      "props": {
-        "src": "https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/view-more.svg",
-        "maxHeight": "48px"
       }
     }
   }

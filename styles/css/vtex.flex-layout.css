@@ -7,12 +7,14 @@
     border-bottom: 1px solid lightgrey;
   }
 
+  .flexCol {
+    justify-content: center;
+    align-items: center;
+  }
+
   .flexRow--deals {
     flex-direction: row;
     max-width: 100%;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin: 0 20px;
     padding: 30px 0;
     height: 90px;
     background-color: #ffffff;
