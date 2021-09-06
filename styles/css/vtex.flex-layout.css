@@ -33,7 +33,23 @@
     align-items: center;
   }
   
+  .flexRowContent--lojas {
+    margin-top: 25px;
+    height: 20px;
+  }
+
   .flexRow--deals .flexCol {
     flex-direction: row;
     align-items: center;
+  }
+
+  .flexRowContent--lojas {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexRowContent--lojas {
+    background-color: #e6e6e6;
+    width: 330px;
+    margin-left: -8px;
   }

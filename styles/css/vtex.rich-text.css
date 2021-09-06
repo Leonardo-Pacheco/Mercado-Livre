@@ -1,3 +1,76 @@
 .paragraph--deals {
     color: black;
 }
+
+.container--beneficios {
+    margin: 5px 15px 0 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.paragraph--todosBeneficios {
+    padding: 0 10px;
+    color: #3483fa;
+    font-size: 14px;
+}
+
+.container--todosBeneficios {
+    margin: -30px 15px 30px 15px;
+    background-color: #fff;
+    border-top: 1px solid #ededed;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.strong {
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.container--lojas {
+    margin: 0 15px;
+}
+
+.paragraph--lojas {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container--ofertas {
+    border-bottom: 1px solid #ededed;
+    margin: 30px 15px 0 15px;
+    background-color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.paragraph--ofertas {
+    font-size: 18px;
+    margin: 12px ;
+}
+
+.container--mais {
+    margin-right: -160px;
+}
+
+.paragraph--mais {
+    color: #3483fa;
+    font-size: 16px;
+}
+
+.wrapper--mais {
+    margin-top: 3px;
+}
+
+.container--lojas1 {
+    margin-left: 0px;
+}
+
+.paragraph--lojas1 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+
+}

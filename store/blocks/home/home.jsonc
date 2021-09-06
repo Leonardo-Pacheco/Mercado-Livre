@@ -1,13 +1,26 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
       "list-context.image-list#main",
-      "flex-layout.row#deals"
+      "flex-layout.row#deals",
+      "rich-text#ofertas",
+      "search-result-layout.customQuery#home",
+      "rich-text#beneficios",
+      "flex-layout.row#beneficios",
+      "rich-text#todosOsBeneficios",
+      "info-card#deezer",
+      "info-card#beneficiosExclusivos",
+      "info-card#realizeSeuSonho",
+      "flex-layout.row#lojas",
+      "slider-layout#lojas",
+      "info-card#imoveisAVenda",
+      "info-card#mercadoCredito"
     ]
   },
-
   "list-context.image-list#main": {
-    "children": ["slider-layout#main-banner"],
+    "children": [
+      "slider-layout#main-banner"
+    ],
     "props": {
       "height": 255,
       "images": [
@@ -58,6 +71,372 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
+    }
+  },
+  "rich-text#ofertas": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "**Ofertas do dia**",
+      "blockClass": "ofertas"
+    }
+  },
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "search-content"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "search-result-layout.mobile": {
+    "children": [
+      "search-content"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": {
+            "desktop": 3,
+            "mobile": 2
+          }
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf"
+    }
+  },
+  "rich-text#beneficios":{
+    "props": {
+      "text": "**Benefícios do Mercado Pontos**",
+      "blockClass": "beneficios"
+    }
+  },
+  "flex-layout.row#beneficios": {
+    "children": [
+      "list-context.product-list#info-cards1",
+      "list-context.product-list#info-cards2"
+    ]
+  },
+
+  "list-context.product-list#info-cards1": {
+    "children": [
+      "info-card#beneficios-disney",
+      "info-card#beneficios-star"
+    ],
+    "props":{
+      "blockClass": "beneficios-cards"
+    }
+  },
+  "info-card#beneficios-disney": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "imageUrl": "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/vdp/disney-brand@3x.png?v=1",
+      "headline": "Disney+",
+      "textAlignment": "CENTER",
+      "blockClass": "disney"
+    }
+  },
+  "info-card#beneficios-star": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "imageUrl": "https://http2.mlstatic.com/resources/frontend/statics/loyal/starplus-brand@3x.png?v=1",
+      "headline": "Star+",
+      "blockClass": "star"
+    }
+  },
+  "list-context.product-list#info-cards2": {
+    "children": [
+      "info-card#beneficios-hbo",
+      "info-card#beneficios-paramount"
+    ]
+  },
+  "info-card#beneficios-hbo": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "imageUrl": "https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/hbomax/logo/logoSquare@3x.png?v=1",
+      "headline": "Até 50% OFF",
+      "subhead": "HBO Max",
+      "blockClass": "hbo"
+    }
+  },
+  "info-card#beneficios-paramount": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "imageUrl": "https://http2.mlstatic.com/resources/frontend/statics/loyal/paramount/logos/paramount-logo-vdp-56-x-56-filled@3x.png",
+      "headline": "Até 40% OFF",
+      "subhead": "Paramount+",
+      "blockClass": "paramount"
+    }
+  },
+  "rich-text#todosOsBeneficios":{
+    "props": {
+      "text": "Ver todos os benefícios",
+      "blockClass": "todosBeneficios"
+    }
+  },
+  "info-card#deezer": {
+    "props": {
+      "isFullModeStyle": false,
+      "imageUrl": "assets/images/background/deezer.png",
+      "headline": "asdasd",
+      "blockClass": "deezer"
+    }
+  },
+  "info-card#beneficiosExclusivos": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_624768-MLA47261167858_082021-C.webp",
+      "headline": "BENEFÍCIOS EXCLUSIVOS",
+      "subhead": "ASSINE O NÍVEL 6",
+      "callToActionText": "Ver mais",
+      "callToActionMode": "link",
+      "blockClass": [
+        "beneficios",
+        "beneficios1"
+        ],
+      "textAlignment": "center"
+    }
+  }, 
+  "info-card#realizeSeuSonho": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_707416-MLA47177855306_082021-C.webp",
+      "headline": "REALIZE O SEU SONHO",
+      "subhead": "FINANCIE AGORA SEU VEÍCULO",
+      "callToActionText": "Ver mais",
+      "callToActionMode": "link",
+      "blockClass": "veiculo",
+      "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.row#lojas": {
+    "children": [
+      "rich-text#lojas",
+      "rich-text#mais"
+    ],
+    "props":{
+      "blockClass": "lojas"
+    }
+  },
+  "rich-text#lojas": {
+    "props": {
+      "blockClass": ["lojas","lojas1"],
+      "text": "Lojas Oficiais",
+      "textAlignment": "left"
+    }
+  },
+  "rich-text#mais": {
+    "props": {
+      "blockClass": ["lojas", "mais"],
+      "text": "Ver mais",
+      "textAlignment": "right"
+    }
+  },
+  
+  "slider-layout#lojas": {
+    "children": ["info-card#1", "info-card#2", "info-card#3", "info-card#4", "info-card#5", "info-card#6", "info-card#7", "info-card#8", "info-card#9", "info-card#10", "info-card#11"],
+    "props": {
+      "height": 181,
+      "blockClass": "lojas",
+      "showNavigationArrows": "desktopOnly",
+      "autoplay": false
+    }
+  },
+
+  "info-card#1": {
+    "props": {
+      "imageUrl": "https://mla-s1-p.mlstatic.com/687102-MLA45628970987_042021-AE.webp",
+      "headline": "Adidas",
+      "blockClass": [
+        "lojas",
+        "adidas"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+
+  "info-card#2": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_629870-MLA32543850337_102019-I.webp",
+      "headline": "Reserva",
+      "blockClass": [
+        "lojas",
+        "reserva"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#3": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_699848-MLA25716427579_062017-I.webp",
+      "headline": "Dell",
+      "blockClass": [
+        "lojas",
+        "dell"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#4": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_750417-MLA31531934126_072019-I.webp",
+      "headline": "Apple",
+      "blockClass": [
+        "lojas",
+        "apple"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#5": {
+    "props": {
+      "imageUrl": "https://mla-s1-p.mlstatic.com/896123-MLA42846104326_072020-I.webp",
+      "headline": "Fast Shop",
+      "blockClass": [
+        "lojas",
+        "shop"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#6": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_867087-MLA27777702863_072018-I.webp",
+      "headline": "Ri Happy",
+      "blockClass": [
+        "lojas",
+        "happy"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#7": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_952590-MLA25716497900_062017-I.webp",
+      "headline": "Kitchenaid",
+      "blockClass": [
+        "lojas",
+        "kitchen"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#8": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_751026-MLA25925415803_082017-I.webp",
+      "headline": "O Boticário",
+      "blockClass": [
+        "lojas",
+        "boticario"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#9": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_733408-MLA26482201454_122017-I.webp",
+      "headline": "Acer Brasil",
+      "blockClass": [
+        "lojas",
+        "acer"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#10": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_998818-MLA25754090344_072017-I.webp",
+      "headline": "Saraiva",
+      "blockClass": [
+        "lojas",
+        "saraiva"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+  "info-card#11": {
+    "props": {
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_620931-MLA25957089312_092017-I.webp",
+      "headline": "Brastemp",
+      "blockClass": [
+        "lojas",
+        "brastemp"
+      ],
+      "textPosition": "center",
+      "textAlignment":"right"
+    }
+  },
+
+  "info-card#imoveisAVenda": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_794327-MLA47311245971_082021-C.webp",
+      "headline": "IMÓVEIS À VENDA",
+      "subhead": "CANTINHO PARA DESCANSAR",
+      "callToActionText": "Ver mais",
+      "callToActionMode": "link",
+      "blockClass": "imoveis",
+      "textAlignment": "center"
+    }
+  }, 
+  "info-card#mercadoCredito": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_659305-MLA46443441625_062021-C.webp",
+      "headline": "MERCADO CRÉDITO",
+      "subhead": "COMPRE PARCELADO NO BOLETO",
+      "callToActionText": "Ver mais",
+      "callToActionMode": "link",
+      "blockClass": "credito",
+      "textAlignment": "center"
     }
   }
 }

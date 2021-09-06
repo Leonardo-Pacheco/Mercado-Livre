@@ -1,0 +1,23 @@
+.imageNormal {
+    justify-content: flex-start;
+    width: 104px;
+    height: 104px;
+}
+
+.buyButton {
+    display: none;
+}
+
+.element {
+    background-color: #fff;
+    border-radius: none;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.clearLink {
+    padding: 0px;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
