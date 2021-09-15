@@ -1,7 +1,10 @@
-    .galleryItem--normal {
+.galleryItem--normal {
     padding: 0px;
 }
 
-    .searchResultContainer {
-        margin: 0 15px 0 15px;
+.searchResultContainer {
+    height: 2510px;
+    margin: 0 15px 0 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     }

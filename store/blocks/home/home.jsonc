@@ -123,8 +123,9 @@
           "component": "OneOrTwoLineSummary",
           "itemsPerRow": {
             "desktop": 3,
-            "mobile": 2
-          }
+            "mobile": 1
+          },
+          "itemsPerPage": 4
         }
       ],
       "OneOrTwoLineSummary": "product-summary.shelf"

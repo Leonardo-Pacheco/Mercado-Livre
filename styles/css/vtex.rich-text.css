@@ -52,7 +52,8 @@
 }
 
 .container--mais {
-    margin-right: -160px;
+    width: 65px;
+    margin-left: 65px;
 }
 
 .paragraph--mais {

@@ -5,3 +5,7 @@
 .paginationDot--lojas {
     display: none;
 }
+
+.paginationDotsContainer--carousel{
+    display: none;
+}
