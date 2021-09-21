@@ -4,6 +4,7 @@
       "list-context.image-list#main",
       "flex-layout.row#deals",
       "rich-text#ofertas",
+      "flex-layout.row#shelf",
       "search-result-layout.customQuery#home",
       "rich-text#beneficios",
       "flex-layout.row#beneficios",
@@ -25,32 +26,32 @@
       "height": 255,
       "images": [
         {
-          "image": "",
+          "image": "assets/images/banner/descontaco.png",
           "mobileImage": "assets/images/banner/beer.png",
           "imgLink": ""
         },
         {
-          "image": "",
+          "image": "assets/images/banner/descontaco2.png",
           "mobileImage": "assets/images/banner/games.png",
           "imgLink": ""
         },
         {
-          "image": "",
+          "image": "assets/images/banner/descontaco3.png",
           "mobileImage": "assets/images/banner/inverno.png",
           "imgLink": ""
         },
         {
-          "image": "",
+          "image": "assets/images/banner/descontaco4.png",
           "mobileImage": "assets/images/banner/moda.png",
           "imgLink": ""
         },
         {
-          "image": "",
+          "image": "assets/images/banner/descontaco5.png",
           "mobileImage": "assets/images/banner/omo.png",
           "imgLink": ""
         },
         {
-          "image": "",
+          "image": "assets/images/banner/descontaco6.png",
           "mobileImage": "assets/images/banner/promocao.png",
           "imgLink": ""
         }
@@ -59,10 +60,7 @@
   },
   "slider-layout#main-banner": {
     "props": {
-      "autoplay": {
-        "timeout": 5000,
-        "stopOnHover": false
-      },
+      "autoplay": false,
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
@@ -81,25 +79,39 @@
       "blockClass": "ofertas"
     }
   },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
   "search-result-layout.customQuery#home": {
     "props": {
       "querySchema": {
         "skusFilter": "FIRST_AVAILABLE",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 4
       }
     },
     "blocks": [
-      "search-result-layout.desktop",
       "search-result-layout.mobile"
     ]
-  },
-  "search-result-layout.desktop": {
-    "children": [
-      "search-content"
-    ],
-    "props": {
-      "preventRouteChange": true
-    }
   },
   "search-result-layout.mobile": {
     "children": [
@@ -119,13 +131,12 @@
     "props": {
       "layouts": [
         {
-          "name": "whole",
+          "name": "grid",
           "component": "OneOrTwoLineSummary",
           "itemsPerRow": {
             "desktop": 3,
             "mobile": 1
-          },
-          "itemsPerPage": 4
+          }
         }
       ],
       "OneOrTwoLineSummary": "product-summary.shelf"
@@ -141,7 +152,10 @@
     "children": [
       "list-context.product-list#info-cards1",
       "list-context.product-list#info-cards2"
-    ]
+    ],
+    "props": {
+      "blockClass": "beneficios"
+    }
   },
 
   "list-context.product-list#info-cards1": {

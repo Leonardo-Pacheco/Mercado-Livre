@@ -3,7 +3,6 @@
 }
 
 .container--beneficios {
-    margin: 5px 15px 0 15px;
     background-color: #fff;
     border-bottom: 1px solid #ededed;
     border-top-left-radius: 6px;
@@ -17,11 +16,81 @@
 }
 
 .container--todosBeneficios {
-    margin: -30px 15px 30px 15px;
     background-color: #fff;
     border-top: 1px solid #ededed;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+}
+
+.paragraph--rich-text--menu {
+    margin-right: 190px;
+}
+
+.wrapper--pix {
+    margin-right: 85px;
+}
+
+.wrapper--deals0 {
+    margin: 5px 0 0 -35px;
+    position: absolute;
+}
+
+@media screen and (min-width: 1250px) {
+    .container--ofertas {
+        margin: 30px 165px 0;
+    }
+    .container--beneficios {
+        margin: 30px 165px 0;
+    }
+    .container--todosBeneficios {
+        margin: 30px 165px 0;
+    }
+  }
+@media screen and (max-width: 1249px) {
+    .container--ofertas {
+        margin: 30px 15px 9px 15px;
+    }
+    .container--beneficios {
+        margin: 5px 15px 0 15px;
+    }
+    .container--todosBeneficios {
+        margin: -30px 15px 30px 15px;
+    }
+  }
+
+.container--deals1 {
+    margin: 30px 0 0 -30px;
+    color: #999;
+    font-size: 14px;
+}
+
+.paragraph--desktop-row2 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.paragraph--desktop-row2:hover {
+    cursor: pointer;
+}
+
+.paragraph--cep {
+    margin: -5px 0px;
+}
+
+.wrapper--entre {
+    margin-left: 25px;
+}
+
+.wrapper--moda {
+    margin-left: 25px;
+}
+
+.wrapper--desktop-row1 {
+    margin-left: 200px;
+}
+
+.wrapper--lojas {
+    margin: -28px 0 20px 15px;
 }
 
 .strong {
@@ -40,7 +109,6 @@
 
 .container--ofertas {
     border-bottom: 1px solid #ededed;
-    margin: 30px 15px 0 15px;
     background-color: #fff;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -59,10 +127,6 @@
 .paragraph--mais {
     color: #3483fa;
     font-size: 16px;
-}
-
-.wrapper--mais {
-    margin-top: 3px;
 }
 
 .container--lojas1 {

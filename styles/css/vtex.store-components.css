@@ -7,13 +7,266 @@
     align-items: flex-start;
 }
 
+.imageElement {
+    margin: auto;
+}
+
 .logoContainer {
     padding: 0px;
+}
+
+.logoImage--desktop {
+    width: 134px;
+    height: 34px;
+    margin-left: -50px;
+    margin-top: 15px;
+}
+
+.logoLink--desktop {
+    max-width: 250px;
+    height: 50px;
 }
 
 .searchBarContainer {
     max-width: 200px;
 }
+
+@media screen and (min-width: 1250px) {
+    .searchBarContainer {
+        margin-right: 100px;
+        min-width: 850px;
+    }
+    .imageElement--carousel {
+        min-height: 340px;
+    }
+    .imageElement {
+        margin-top: -10px
+    }
+    .imageElement:hover {
+        cursor: pointer;
+    }
+    .infoCardContainer--deezer {
+        display: none;
+    }
+    .infoCardImageContainer--disney {
+        position: absolute;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        background-image: linear-gradient(0deg,rgba(1,25,71) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/widget/characters-carousel-widget-v2@3x.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--star {
+        position: absolute;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        background-image: linear-gradient(0deg,rgba(66,0,57) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/star-plus-widget@3x.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--hbo {
+        position: absolute;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        margin-left: 5px;
+        background-image: linear-gradient(0deg,rgba(60,3,78) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/hbomax/widget/friends-widget@3x.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--paramount {
+        position: absolute;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        margin-left: 5px;
+        background-image: linear-gradient(0deg,rgba(0,100,255) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/paramount/mlb/widget/paramount-widget-mlb@3x.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardHeadline--disney {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+    
+    .infoCardHeadline--star {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+    
+    .infoCardHeadline--hbo {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+    
+    .infoCardSubhead--hbo {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+
+    .infoCardHeadline--paramount {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+    
+    .infoCardSubhead--paramount {
+        position: absolute;
+        font-size: 12px;
+        margin: 125px 0 0 40px;
+        color: #fff;
+    }
+    .infoCardImage--disney {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 85px 200px 0 0;
+        border-radius: 6px;
+    }
+    .infoCardImage--star {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 85px 200px 0 0;
+        border-radius: 6px;
+    }
+    .infoCardImage--hbo {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 85px 200px 0 0;
+        border-radius: 6px;
+    }
+    .infoCardImage--paramount {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 85px 200px 0 0;
+        border-radius: 6px;
+    }
+  }
+@media screen and (max-width: 1249px) {
+    .infoCardImageContainer--disney {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 150px;
+        height: 184px;
+        background-image: linear-gradient(0deg,rgba(1,25,71) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/widget/characters-carousel-widget-v2@3x.png);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--star {
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 150px;
+        height: 184px;
+        background-image: linear-gradient(0deg,rgba(66,0,57) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/star-plus-widget@3x.png);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--hbo {
+        margin-left: 10px;
+        width: 150px;
+        height: 184px;
+        background-image: linear-gradient(0deg,rgba(60,3,78) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/hbomax/widget/friends-widget@3x.jpg);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--paramount {
+        margin-left: 5px;
+        width: 150px;
+        height: 184px;
+        background-image: linear-gradient(0deg,rgba(0,100,255) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/paramount/mlb/widget/paramount-widget-mlb@3x.jpg);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardHeadline--disney {
+        position: absolute;
+        font-size: 16px;
+        margin: 100px 0 0 37px;
+        color: #fff;
+    }
+    
+    .infoCardHeadline--star {
+        position: absolute;
+        font-size: 16px;
+        margin: 100px 25px 0 50px;
+        color: #fff;
+    }
+    
+    .infoCardHeadline--hbo {
+        position: absolute;
+        font-size: 16px;
+        margin: 100px 0 0 20px;
+        color: #fff;
+    }
+    
+    .infoCardHeadline--paramount {
+        position: absolute;
+        font-size: 16px;
+        margin: 100px 0 0 20px;
+        color: #fff;
+    }
+    
+    .infoCardSubhead--hbo {
+        position: absolute;
+        font-size: 12px;
+        margin: 125px 0 0 40px;
+        color: #fff;
+    }
+    
+    .infoCardSubhead--paramount {
+        position: absolute;
+        font-size: 12px;
+        margin: 125px 0 0 40px;
+        color: #fff;
+    }
+
+    .infoCardImage--disney {
+        margin-bottom: 65px;
+        border-radius: 6px;
+    }
+    
+    .infoCardImage--hbo {
+        margin-bottom: 65px;
+        border-radius: 6px;
+    }
+    
+    .infoCardImage--star {
+        margin-bottom: 65px;
+        border-radius: 6px;
+    }
+    
+    .infoCardImage--paramount {
+        margin-bottom: 65px;
+        border-radius: 6px;
+    }
+  }
 
 .imageElement {
     margin-right: 5px;
@@ -24,9 +277,8 @@
     height: 48px;
 }
 
-.container {
-    margin: 0 15px 30px 15px;
-    background-color: #fff;
+.flexRow--desktop-row {
+    margin: 0;
 }
 
 .infoCardCallActionText--beneficios {
@@ -72,7 +324,6 @@
 
 .infoCardContainer {
     background-color: #fff;
-    border-radius: 6px;
 }
 
 .infoCardImageContainer {
@@ -81,104 +332,6 @@
     justify-content: center;
 }
 
-.infoCardHeadline--disney {
-    position: absolute;
-    font-size: 16px;
-    margin: 100px 0 0 37px;
-    color: #fff;
-}
-
-.infoCardHeadline--star {
-    position: absolute;
-    font-size: 16px;
-    margin: 100px 25px 0 50px;
-    color: #fff;
-}
-
-.infoCardHeadline--hbo {
-    position: absolute;
-    font-size: 16px;
-    margin: 100px 0 0 20px;
-    color: #fff;
-}
-
-.infoCardHeadline--paramount {
-    position: absolute;
-    font-size: 16px;
-    margin: 100px 0 0 20px;
-    color: #fff;
-}
-
-.infoCardSubhead--hbo {
-    position: absolute;
-    font-size: 12px;
-    margin: 125px 0 0 40px;
-    color: #fff;
-}
-
-.infoCardSubhead--paramount {
-    position: absolute;
-    font-size: 12px;
-    margin: 125px 0 0 40px;
-    color: #fff;
-}
-
-.infoCardImage--disney {
-    margin-bottom: 65px;
-    border-radius: 6px;
-}
-
-.infoCardImage--hbo {
-    margin-bottom: 65px;
-    border-radius: 6px;
-}
-
-.infoCardImage--star {
-    margin-bottom: 65px;
-    border-radius: 6px;
-}
-
-.infoCardImage--paramount {
-    margin-bottom: 65px;
-    border-radius: 6px;
-}
-
-.infoCardImageContainer--disney {
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 150px;
-    height: 184px;
-    background-image: linear-gradient(0deg,rgba(1,25,71) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/widget/characters-carousel-widget-v2@3x.png);
-    background-size: 150px;
-    background-repeat: no-repeat;
-    border-radius: 6px;
-}
-.infoCardImageContainer--star {
-    margin-top: 5px;
-    width: 150px;
-    height: 184px;
-    background-image: linear-gradient(0deg,rgba(66,0,57) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/star-plus-widget@3x.png);
-    background-size: 150px;
-    background-repeat: no-repeat;
-    border-radius: 6px;
-}
-.infoCardImageContainer--hbo {
-    margin-left: 5px;
-    width: 150px;
-    height: 184px;
-    background-image: linear-gradient(0deg,rgba(60,3,78) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/hbomax/widget/friends-widget@3x.jpg);
-    background-size: 150px;
-    background-repeat: no-repeat;
-    border-radius: 6px;
-}
-.infoCardImageContainer--paramount {
-    width: 150px;
-    height: 184px;
-    background-image: linear-gradient(0deg,rgba(0,100,255) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/paramount/mlb/widget/paramount-widget-mlb@3x.jpg);
-    background-size: 150px;
-    background-repeat: no-repeat;
-    border-radius: 6px;
-}
 .infoCardImage--beneficios {
     width: 153px;
     height: 190px;

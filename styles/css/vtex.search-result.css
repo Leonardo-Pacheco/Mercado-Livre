@@ -3,8 +3,8 @@
 }
 
 .searchResultContainer {
-    height: 2510px;
-    margin: 0 15px 0 15px;
+    background-color: #ffffff;
+    margin: 0 15px 50px 15px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     }
