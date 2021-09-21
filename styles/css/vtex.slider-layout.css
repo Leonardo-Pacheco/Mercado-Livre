@@ -1,0 +1,17 @@
+.paginationDot--items-filter {
+    display: none;
+}
+
+.paginationDot--lojas {
+    display: none;
+}
+
+.paginationDotsContainer--carousel{
+    display: none;
+}
+
+@media screen and (max-width: 1249px) {
+    .sliderLayoutContainer--shelf {
+        display: none;
+    }
+  }

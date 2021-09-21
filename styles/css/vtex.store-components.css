@@ -7,14 +7,621 @@
     align-items: flex-start;
 }
 
+.imageElement {
+    margin: auto;
+}
+
 .logoContainer {
     padding: 0px;
+}
+
+.logoImage--desktop {
+    width: 134px;
+    height: 34px;
+    margin-left: -50px;
+    margin-top: 15px;
+}
+
+.logoLink--desktop {
+    max-width: 250px;
+    height: 50px;
 }
 
 .searchBarContainer {
     max-width: 200px;
 }
 
+@media screen and (min-width: 1250px) {
+    .searchBarContainer {
+        margin-right: 100px;
+        min-width: 850px;
+    }
+    .imageElement--carousel {
+        min-height: 340px;
+    }
+    .imageElement {
+        margin-top: -10px
+    }
+    .imageElement:hover {
+        cursor: pointer;
+    }
+    .infoCardContainer--deezer {
+        display: none;
+    }
+    .infoCardImageContainer--disney {
+        position: absolute;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        background-image: linear-gradient(0deg,rgba(1,25,71) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/widget/characters-carousel-widget-v2@3x.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--star {
+        position: absolute;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        background-image: linear-gradient(0deg,rgba(66,0,57) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/star-plus-widget@3x.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--hbo {
+        position: absolute;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        margin-left: 5px;
+        background-image: linear-gradient(0deg,rgba(60,3,78) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/hbomax/widget/friends-widget@3x.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--paramount {
+        position: absolute;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        margin-left: 5px;
+        background-image: linear-gradient(0deg,rgba(0,100,255) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/paramount/mlb/widget/paramount-widget-mlb@3x.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardHeadline--disney {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+    
+    .infoCardHeadline--star {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+    
+    .infoCardHeadline--hbo {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+    
+    .infoCardSubhead--hbo {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+
+    .infoCardHeadline--paramount {
+        position: absolute;
+        z-index: 1;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 100px;
+    }
+    
+    .infoCardSubhead--paramount {
+        position: absolute;
+        font-size: 12px;
+        margin: 125px 0 0 40px;
+        color: #fff;
+    }
+    .infoCardImage--disney {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 85px 200px 0 0;
+        border-radius: 6px;
+    }
+    .infoCardImage--star {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 85px 200px 0 0;
+        border-radius: 6px;
+    }
+    .infoCardImage--hbo {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 85px 200px 0 0;
+        border-radius: 6px;
+    }
+    .infoCardImage--paramount {
+        min-width: 80px;
+        min-height: 80px;
+        margin: 85px 200px 0 0;
+        border-radius: 6px;
+    }
+  }
+@media screen and (max-width: 1249px) {
+    .infoCardImageContainer--disney {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 150px;
+        height: 184px;
+        background-image: linear-gradient(0deg,rgba(1,25,71) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/widget/characters-carousel-widget-v2@3x.png);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--star {
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 150px;
+        height: 184px;
+        background-image: linear-gradient(0deg,rgba(66,0,57) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/star-plus-widget@3x.png);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--hbo {
+        margin-left: 10px;
+        width: 150px;
+        height: 184px;
+        background-image: linear-gradient(0deg,rgba(60,3,78) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/hbomax/widget/friends-widget@3x.jpg);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardImageContainer--paramount {
+        margin-left: 5px;
+        width: 150px;
+        height: 184px;
+        background-image: linear-gradient(0deg,rgba(0,100,255) 84px, rgba(0, 0, 0, 0) 100%),url(https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/paramount/mlb/widget/paramount-widget-mlb@3x.jpg);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+    }
+    .infoCardHeadline--disney {
+        position: absolute;
+        font-size: 16px;
+        margin: 100px 0 0 37px;
+        color: #fff;
+    }
+    
+    .infoCardHeadline--star {
+        position: absolute;
+        font-size: 16px;
+        margin: 100px 25px 0 50px;
+        color: #fff;
+    }
+    
+    .infoCardHeadline--hbo {
+        position: absolute;
+        font-size: 16px;
+        margin: 100px 0 0 20px;
+        color: #fff;
+    }
+    
+    .infoCardHeadline--paramount {
+        position: absolute;
+        font-size: 16px;
+        margin: 100px 0 0 20px;
+        color: #fff;
+    }
+    
+    .infoCardSubhead--hbo {
+        position: absolute;
+        font-size: 12px;
+        margin: 125px 0 0 40px;
+        color: #fff;
+    }
+    
+    .infoCardSubhead--paramount {
+        position: absolute;
+        font-size: 12px;
+        margin: 125px 0 0 40px;
+        color: #fff;
+    }
+
+    .infoCardImage--disney {
+        margin-bottom: 65px;
+        border-radius: 6px;
+    }
+    
+    .infoCardImage--hbo {
+        margin-bottom: 65px;
+        border-radius: 6px;
+    }
+    
+    .infoCardImage--star {
+        margin-bottom: 65px;
+        border-radius: 6px;
+    }
+    
+    .infoCardImage--paramount {
+        margin-bottom: 65px;
+        border-radius: 6px;
+    }
+  }
+
 .imageElement {
     margin-right: 5px;
+}
+
+.infoCardImage {
+    width: 48px;
+    height: 48px;
+}
+
+.flexRow--desktop-row {
+    margin: 0;
+}
+
+.infoCardCallActionText--beneficios {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    background: none;
+    border: 0;
+    color: #3a82fa;
+}
+
+.infoCardCallActionText--veiculo {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    background: none;
+    border: 0;
+    color: #3a82fa;
+}
+
+.infoCardCallActionText--imoveis {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    background: none;
+    border: 0;
+    color: #3a82fa;
+}
+
+.infoCardCallActionText--credito {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    background: none;
+    border: 0;
+    color: #3a82fa;
+}
+
+
+.infoCardContainer {
+    background-color: #fff;
+}
+
+.infoCardImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoCardImage--beneficios {
+    width: 153px;
+    height: 190px;
+    margin-top: -190px;
+    margin-left: 177px;
+}
+.infoCardTextContainer--beneficios {
+    width: 54%;
+    height: 190px;
+    align-items: center;
+}
+.infoCardContainer--beneficios {
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 4px;
+    height: 190px;
+}
+.infoCardCallActionContainer--beneficios {
+    margin: 70px 70px 0 0;
+}
+.infoCardHeadline--beneficios {
+    margin: 20px 0 15px 0;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #4b4b4b;
+}
+.infoCardSubhead--beneficios {
+    margin: 2px 0 0 0;
+    font-size: 17px;
+    color: #4b4b4b;
+    font-weight: 600;
+}
+.infoCardImage--veiculo {
+    width: 153px;
+    height: 190px;
+    margin-top: -190px;
+    margin-left: 177px;
+}
+.infoCardTextContainer--veiculo {
+    width: 50%;
+    height: 190px;
+    align-items: center;
+}
+.infoCardContainer--veiculo {
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 4px;
+    height: 190px;
+}
+.infoCardHeadline--veiculo {
+    width: 100%;
+    margin: 20px 0 15px 0;
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: #4b4b4b;
+}
+.infoCardSubhead--veiculo {
+    margin: 2px 0 0 0;
+    font-size: 17px;
+    color: #4b4b4b;
+    font-weight: 600;
+}
+.infoCardCallActionContainer--veiculo {
+    margin: 55px 60px 0 0;
+}
+.infoCardImage--imoveis {
+    width: 153px;
+    height: 190px;
+    margin-top: -190px;
+    margin-left: 177px;
+}
+.infoCardTextContainer--imoveis {
+    width: 54%;
+    height: 190px;
+    align-items: center;
+}
+.infoCardContainer--imoveis {
+    background-color: #fff;
+    margin: 50px 15px 15px 15px;
+    border-radius: 4px;
+    height: 190px;
+}
+.infoCardCallActionContainer--imoveis {
+    margin: 30px 70px 0 0;
+}
+.infoCardHeadline--imoveis {
+    margin: 20px 0 15px 0;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    color: #4b4b4b;
+}
+.infoCardSubhead--imoveis {
+    margin: 2px 0 0 0;
+    font-size: 20px;
+    color: #4b4b4b;
+    font-weight: 600;
+}
+.infoCardImage--credito {
+    width: 153px;
+    height: 190px;
+    margin-top: -190px;
+    margin-left: 177px;
+}
+.infoCardTextContainer--credito {
+    width: 54%;
+    height: 190px;
+    align-items: center;
+}
+.infoCardContainer--credito {
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 4px;
+    height: 190px;
+}
+.infoCardCallActionContainer--credito {
+    margin: 30px 70px 0 0;
+}
+.infoCardHeadline--credito {
+    margin: 20px 0 15px 0;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    color: #4b4b4b;
+}
+.infoCardSubhead--credito {
+    margin: 2px 0 0 0;
+    font-size: 20px;
+    color: #4b4b4b;
+    font-weight: 600;
+}
+.slideChildrenContainer--lojas {
+    height: 181px;
+    margin: auto;
+}
+.infoCardContainer--lojas {
+    display: flex;
+    align-items: end;
+    flex-direction: row-reverse;
+    height: 181px;
+    width: 328px;
+}
+.infoCardImage--lojas {
+    width: 80px;
+    height: 80px;
+    border-radius: 8.1px;
+    box-shadow: 0 3px 16px 0 rgb(0 0 0 / 10%);
+    margin: 0 0 10px 15px;
+}
+.infoCardHeadline--adidas {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 150px 20px 0;
+}
+.infoCardHeadline--reserva {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 145px 20px 0;
+}
+.infoCardHeadline--dell {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 180px 20px 0;
+}
+.infoCardHeadline--apple {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 160px 20px 0;
+}
+.infoCardHeadline--shop {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 130px 20px 0;
+}
+.infoCardHeadline--happy {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 135px 20px 0;
+}
+.infoCardHeadline--kitchen {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 120px 20px 0;
+}
+.infoCardHeadline--boticario {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 125px 20px 0;
+}
+.infoCardHeadline--acer {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 125px 20px 0;
+}
+.infoCardHeadline--saraiva {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 155px 20px 0;
+}
+.infoCardHeadline--brastemp {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 135px 20px 0;
+}
+.infoCardContainer--adidas {
+    background-image: url(assets/images/lojas/adidas.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--reserva {
+    background-image: url(assets/images/lojas/reserva.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--dell {
+    background-image: url(assets/images/lojas/dell.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--apple {
+    background-image: url(assets/images/lojas/apple.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--shop {
+    background-image: url(assets/images/lojas/shop.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--happy {
+    background-image: url(assets/images/lojas/happy.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--kitchen {
+    background-image: url(assets/images/lojas/kitchen.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--boticario {
+    background-image: url(assets/images/lojas/boticario.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--acer {
+    background-image: url(assets/images/lojas/acer.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--saraiva {
+    background-image: url(assets/images/lojas/saraiva.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--brastemp {
+    background-image: url(assets/images/lojas/brastemp.png);
+    background-size: 328px 115px;
+    background-repeat: no-repeat;
+}
+.infoCardContainer--deezer {
+    margin: 15px;
+    height: 390px;
+    width: 330px;
+    border-radius: 4px;
+    background-image: url(assets/images/background/deezer.png), url(assets/images/background/background.png);
+    background-size: 330px 200px, 100% 250px;
+    background-position-y: bottom, top;
+    background-repeat: no-repeat, no-repeat;
+}
+.infoCardImage--deezer {
+    width: 0px;
+    height: 0px;
+}
+.infoCardHeadline--deezer {
+    display: none;
+}
+.infoCardCallActionContainer--lojas {
+    display: none;
+}
+.infoCardCallActionContainer--disney {
+    display: none;
+}
+.infoCardCallActionContainer--star {
+    display: none;
+}
+.infoCardCallActionContainer--hbo {
+    display: none;
+}
+.infoCardCallActionContainer--paramount {
+    display: none;
+}
+.infoCardCallActionContainer--deezer {
+    display: none;
 }

@@ -12,6 +12,64 @@
     align-items: center;
   }
 
+  .flexCol--col1 {
+    border-right: 1px solid #ededed;
+    border-left: 4px solid #3483fa;
+    min-height: 80px;
+    margin-top: -27px;
+  }
+
+
+  .stretchChildrenWidth .logoLink--desktop {
+    max-width: 250px;
+  }
+  
+
+  .flexRow--desktop-row {
+    background-color: #fff159;
+    width: 100%;
+  }
+  
+  .flexRow--desktop-row2 {
+    background-color: #fff159;
+    width: 100%;
+    height: 45px;
+  }
+
+  @media screen and (max-width: 1249px) {
+    .flexColChild--col {
+      display: none;
+    }
+    .flexRow--deals {
+      width: 100%;
+      margin: 0px;
+    }
+    .flexRow--beneficios {
+      margin: 0 7px 30px 7px;
+    }
+  }
+
+  @media screen and (min-width: 1250px) {
+    .flexRow--deals {
+      flex-direction: row;
+      max-width: 100%;
+      padding: 30px 0;
+      margin: 50px 165px;
+      height: 170px;
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+    .sliderTrackContainer--shelf {
+      margin: 0 87px;
+    }
+    .flexRow--beneficios {
+      margin: 0 161px;
+    }
+    .flexRowContent--beneficios {
+      height: 260px;
+    }
+  }
+
   .flexRow--deals {
     flex-direction: row;
     max-width: 100%;
@@ -29,11 +87,23 @@
     align-items: center;
   }
   
-  .flexRow--deals .stretchChildrenWidth {
-    align-items: center;
+  .flexRowContent--lojas {
+    margin-top: 25px;
+    height: 20px;
   }
-  
+
   .flexRow--deals .flexCol {
     flex-direction: row;
     align-items: center;
+  }
+
+  .flexRowContent--lojas {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexRowContent--lojas {
+    background-color: #e6e6e6;
+    width: 330px;
+    margin-left: -8px;
   }

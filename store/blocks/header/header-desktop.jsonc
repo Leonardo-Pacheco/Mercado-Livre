@@ -1,5 +1,165 @@
 {
-    "header-layout.desktop": {
-    "children": []
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop"
+    ]
+  },
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "logo#desktop",
+      "search-bar",
+      "rich-text#desktop"
+    ],
+    "props":{
+      "blockClass": "desktop-row"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logoDesk.png",
+      "blockClass": "desktop"
+    }
+  },
+  "rich-text#desktop": {
+    "props": {
+      "textAlignment": "RIGHT",
+      "text": "Descontaço com ate 70% OFF",
+      "blockClass": "desktop-row1"
+    }
+  },
+  "flex-layout.row#2-desktop": {
+    "children": [
+      "header-spacer",
+      "rich-text#1",
+      "header-spacer",
+      "rich-text#2",
+      "rich-text#3",
+      "rich-text#4",
+      "rich-text#5",
+      "rich-text#6",
+      "rich-text#7",
+      "rich-text#8",
+      "header-spacer",
+      "rich-text#9",
+      "rich-text#10",
+      "rich-text#11",
+      "minicart.v2"
+    ],
+    "props":{
+      "blockClass": "desktop-row2"
+    }
+  },
+  "rich-text#1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Informe seu CEP",
+      "blockClass": [
+        "cep",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Categorias",
+      "blockClass": [
+        "categorias",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Ofertas",
+      "blockClass": [
+        "ofertas-text",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Histórico",
+      "blockClass": [
+        "historico",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#5": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Supermercado",
+      "blockClass": [
+        "supermercado",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#6": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Moda",
+      "blockClass": [
+        "moda",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#7": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Vender",
+      "blockClass": [
+        "vender",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#8": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Contato",
+      "blockClass": [
+        "contato",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#9": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Crie sua conta",
+      "blockClass": [
+        "conta",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#10": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Entre",
+      "blockClass": [
+        "entre",
+        "desktop-row2"
+      ]
+    }
+  },
+  "rich-text#11": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "Compras",
+      "blockClass": [
+        "compras",
+        "desktop-row2"
+      ]
+    }
   }
 }

@@ -1,0 +1,10 @@
+.galleryItem--normal {
+    padding: 0px;
+}
+
+.searchResultContainer {
+    background-color: #ffffff;
+    margin: 0 15px 50px 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    }
